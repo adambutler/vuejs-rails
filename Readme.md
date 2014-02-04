@@ -1,4 +1,4 @@
-# vuejs-rails <a href="http://badge.fury.io/rb/vuejs-rails"><img src="https://badge.fury.io/rb/vuejs-rails@2x.png" alt="Gem Version" height="18"></a>
+# vuejs-rails [![Gem Version](https://badge.fury.io/rb/vuejs-rails.png)](http://badge.fury.io/rb/vuejs-rails)
 
 ### About
 
