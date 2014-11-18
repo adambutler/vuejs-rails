@@ -359,7 +359,7 @@ function extend (options) {
  *  For options such as `data`, `vms`, `directives`, 'partials',
  *  they should be further extended. However extending should only
  *  be done at top level.
- *  
+ *
  *  `proto` is an exception because it's handled directly on the
  *  prototype.
  *
@@ -831,7 +831,7 @@ function enableDebug () {
             console.log(msg)
         }
     }
-    
+
     /**
      *  warnings, traces by default
      *  can be suppressed by `silent` option.
@@ -926,7 +926,7 @@ var Emitter     = require('./emitter'),
     DepsParser  = require('./deps-parser'),
     ExpParser   = require('./exp-parser'),
     ViewModel,
-    
+
     // cache methods
     slice       = [].slice,
     extend      = utils.extend,
@@ -2322,7 +2322,7 @@ function watchMutation (method) {
             inserted = args.slice(2)
             removed = result
         }
-        
+
         // link & unlink
         linkArrayElements(this, inserted)
         unlinkArrayElements(this, removed)
@@ -2337,7 +2337,7 @@ function watchMutation (method) {
         })
 
         return result
-        
+
     }, !hasProto)
 }
 
@@ -2785,7 +2785,7 @@ function Directive (name, ast, definition, compiler, el) {
 var DirProto = Directive.prototype
 
 /**
- *  called when a new value is set 
+ *  called when a new value is set
  *  for computed properties, this will only be called once
  *  during initialization.
  */
@@ -2984,7 +2984,7 @@ var KEYWORDS =
         ',arguments,let,yield' +
         // allow using Math in expressions
         ',Math',
-        
+
     KEYWORDS_RE = new RegExp(["\\b" + KEYWORDS.replace(/,/g, '\\b|\\b') + "\\b"].join('|'), 'g'),
     REMOVE_RE   = /\/\*(?:.|\n)*?\*\/|\/\/[^\n]*\n|\/\/[^\n]*$|'[^']*'|"[^"]*"|[\s\t\n]*\.[\s\t\n]*[$\w\.]+|[\{,]\s*[\w\$_]+\s*:/g,
     SPLIT_RE    = /[^\w$]+/g,
@@ -3227,7 +3227,7 @@ function setDelimiters (delimiters) {
     exports.Regex = buildInterpolationRegex()
 }
 
-/** 
+/**
  *  Parse a piece of text, return an array of tokens
  *  token types:
  *  1. plain string
@@ -3363,7 +3363,7 @@ module.exports = {
         Observer.shouldGet = false
         utils.log('\ndone.')
     }
-    
+
 }
 });
 require.register("vue/src/filters.js", function(exports, require, module){
@@ -3706,7 +3706,7 @@ function applyTransitionClass (el, stage, changeState, hasAnimation) {
             changeState()
         }
         return codes.CSS_L
-        
+
     }
 
 }
@@ -3976,7 +3976,7 @@ var utils    = require('../utils')
 module.exports = {
 
     bind: function () {
-        
+
         this.parent = this.el.parentNode
         this.ref    = document.createComment('vue-if')
         this.Ctor   = this.compiler.resolveComponent(this.el)
@@ -4014,7 +4014,7 @@ module.exports = {
                 this.childVM.$before(this.ref)
             }
         }
-        
+
     },
 
     unbind: function () {
