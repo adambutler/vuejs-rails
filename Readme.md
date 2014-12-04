@@ -13,3 +13,7 @@ Have in your Gemfile:
 And, have in your application.js manifest:
 
 	//= require vue
+
+## Contributing
+
+Contributions are welcome, please follow [GitHub Flow](https://guides.github.com/introduction/flow/index.html)
