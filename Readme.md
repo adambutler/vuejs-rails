@@ -13,6 +13,8 @@ Have in your Gemfile:
 And, have in your application.js manifest:
 
 	//= require vue
+	//= require vue-router (optional)
+	//= require vue-resource (optional)
 
 ## Contributing
 
