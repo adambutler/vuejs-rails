@@ -10,11 +10,19 @@ Have in your Gemfile:
 
 	gem 'vuejs-rails'
 
-And, have in your application.js manifest:
+And in your application.js manifest:
 
 	//= require vue
 	//= require vue-router (optional)
 	//= require vue-resource (optional)
+
+If your application.js requires TurboLinks (a default setting for new Rails apps), you should strongly consider disabling it, as it will cause pages to load without reloading the Javascript.
+
+In app/views/layouts/application.html.erb, move this line from the head of the document to the end of the body:
+
+```<%= javascript_include_tag 'application' %>``` 
+
+You may write your Vue.js code directly in your views using ```<script>``` tags, or in a separate Javascript file (recommended).
 
 ## Contributing
 
