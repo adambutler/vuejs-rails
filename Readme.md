@@ -16,6 +16,11 @@ And in your application.js manifest:
 	//= require vue-router (optional)
 	//= require vue-resource (optional)
 
+If want to using [Vue 2.0](http://vuejs.org/2016/04/27/announcing-2.0/):
+
+    //= require vue2
+    //= require vue2-router (optional)
+
 If your application.js requires TurboLinks (a default setting for new Rails apps), you should strongly consider disabling it, as it will cause pages to load without reloading the Javascript.
 
 In app/views/layouts/application.html.erb, move this line from the head of the document to the end of the body:
