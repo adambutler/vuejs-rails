@@ -1,5 +1,5 @@
 module Vue
   module Rails
-    VERSION = '1.0.26'
+    VERSION = '2.0.1'
   end
 end
