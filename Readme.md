@@ -9,7 +9,7 @@ Rails 3.1+ asset-pipeline gem to provide Vue.js
 
 ### Package Versions
 
-- vue v2.0.7
+- vue v2.0.8
 - vue-router v2.0.3
 - vue-resource v1.0.3
 
