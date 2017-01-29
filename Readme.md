@@ -9,8 +9,8 @@ Rails 3.1+ asset-pipeline gem to provide Vue.js
 
 ### Package Versions
 
-- vue v2.1.6
-- vue-router v2.1.1
+- vue v2.1.10
+- vue-router v2.2.0
 - vue-resource v1.0.3
 
 ### Setup
@@ -35,7 +35,7 @@ In `app/views/layouts/application.html.erb`, move this line from the head of the
 
 ```html
 <%= javascript_include_tag 'application' %>
-``` 
+```
 
 You may write your Vue.js code directly in your views using `<script>` tags, or in a separate Javascript file (recommended).
 
