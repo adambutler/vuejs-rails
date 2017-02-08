@@ -12,6 +12,7 @@ Rails 3.1+ asset-pipeline gem to provide Vue.js
 - vue v2.1.10
 - vue-router v2.2.0
 - vue-resource v1.0.3
+- vuex v2.0.0
 
 ### Setup
 
@@ -27,6 +28,7 @@ And in your application.js manifest:
 //= require vue
 //= require vue-router (optional)
 //= require vue-resource (optional)
+//= require vuex (optional)
 ```
 
 If your `application.js` requires TurboLinks (a default setting for new Rails apps), you should strongly consider disabling it, as it will cause pages to load without reloading the Javascript.
