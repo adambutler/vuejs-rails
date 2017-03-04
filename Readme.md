@@ -28,6 +28,7 @@ And in your application.js manifest:
 //= require vue
 //= require vue-router (optional)
 //= require vue-resource (optional)
+//= require vuex (optional)
 ```
 
 If your `application.js` requires TurboLinks (a default setting for new Rails apps), you should strongly consider disabling it, as it will cause pages to load without reloading the Javascript.
