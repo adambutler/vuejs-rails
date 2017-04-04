@@ -51,6 +51,8 @@ Vue.minify = true
 ```
 You can do it in e.g. your environment initializers.
 
+Make sure to clean your assets cache (`rake assets:clean`) after changing state of the flag.
+
 ## Contributing
 
 Contributions are welcome, please follow [GitHub Flow](https://guides.github.com/introduction/flow/index.html)
