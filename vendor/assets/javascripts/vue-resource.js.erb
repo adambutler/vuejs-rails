@@ -1,1 +1,1 @@
-<% require_asset(Rails.env.production? ? 'dist/vue-resource.min.js' : 'dist/vue-resource.js') %>
+<%= evaluate(Vue.minify ? 'dist/vue-resource.min.js' : 'dist/vue-resource.js') %>
