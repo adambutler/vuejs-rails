@@ -1,1 +1,1 @@
-<%= evaluate(Vue.minify ? 'dist/vue-router.min.js' : 'dist/vue-router.js') %>
+<%= require_asset Vue.dev_or_minified('vue-router') %>
