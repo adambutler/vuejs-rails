@@ -4,7 +4,7 @@ module Vue
   mattr_accessor :minify
 
   class << self
-    minify = ::Rails.env.production?
+    minify = defined?(::Rails) && ::Rails.env.production?
     def dev_or_minified(asset_name)
       minify ? "dist/#{asset_name}.min.js" : "dist/#{asset_name}.js"
     end
