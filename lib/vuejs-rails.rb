@@ -4,9 +4,9 @@ module Vue
   mattr_accessor :development_mode
 
   class << self
-    development_mode = defined?(::Rails) && ::Rails.env.production?
+    development_mode = defined?(::Rails) && ::Rails.env.development?
     def dev_or_minified(asset_name)
-      development_mode ? "dist/#{asset_name}.min.js" : "dist/#{asset_name}.js"
+      development_mode ? "dist/#{asset_name}.js": "dist/#{asset_name}.min.js"
     end
   end
 
