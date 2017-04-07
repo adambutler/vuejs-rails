@@ -45,13 +45,13 @@ You may write your Vue.js code directly in your views using `<script>` tags, or 
 
 By default, gem uses minified versions in production and full versions otherwise.
 
-You can override this behavior by setting `Vue.minify` flag:
+You can override this behavior by setting `Vue.development_mode` flag:
 ```ruby
-Vue.minify = true
+Vue.development_mode = true
 ```
 You can do it in e.g. your environment initializers.
 
-Make sure to clean your assets cache (`rake assets:clean`) after changing state of the flag.
+Make sure to clean your assets cache (`rake tmp:cache:clear`) after changing state of the flag.
 
 ## Contributing
 

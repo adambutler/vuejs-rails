@@ -1,12 +1,12 @@
 require "vuejs-rails/version"
 
 module Vue
-  mattr_accessor :minify
+  mattr_accessor :development_mode
 
   class << self
-    minify = defined?(::Rails) && ::Rails.env.production?
+    development_mode = defined?(::Rails) && ::Rails.env.production?
     def dev_or_minified(asset_name)
-      minify ? "dist/#{asset_name}.min.js" : "dist/#{asset_name}.js"
+      development_mode ? "dist/#{asset_name}.min.js" : "dist/#{asset_name}.js"
     end
   end
 
