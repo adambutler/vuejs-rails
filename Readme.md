@@ -41,6 +41,18 @@ In `app/views/layouts/application.html.erb`, move this line from the head of the
 
 You may write your Vue.js code directly in your views using `<script>` tags, or in a separate Javascript file (recommended).
 
+#### Full and minified assets versions
+
+By default, gem uses minified versions in production and full versions otherwise.
+
+You can override this behavior by setting `Vue.development_mode` flag:
+```ruby
+Vue.development_mode = true
+```
+You can do it in e.g. your environment initializers.
+
+Make sure to clean your assets cache (`rake tmp:cache:clear`) after changing state of the flag.
+
 ## Contributing
 
 Contributions are welcome, please follow [GitHub Flow](https://guides.github.com/introduction/flow/index.html)
