@@ -9,7 +9,7 @@ Rails 3.1+ asset-pipeline gem to provide Vue.js
 
 ### Package Versions
 
-- vue v2.3.0
+- vue v2.3.2
 - vue-router v2.5.2
 - vue-resource v1.3.1
 - vuex v2.3.0
@@ -43,7 +43,7 @@ You may write your Vue.js code directly in your views using `<script>` tags, or 
 
 #### Full and minified assets versions
 
-Starting from version '>= 2.3.0', by default, gem uses minified versions in production and full versions otherwise.
+Starting from version '>= 2.3.2', by default, gem uses minified versions in production and full versions otherwise.
 
 You can override this behavior by setting `Vue.development_mode` flag:
 ```ruby
