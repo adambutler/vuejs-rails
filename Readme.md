@@ -9,10 +9,15 @@ Rails 3.1+ asset-pipeline gem to provide Vue.js
 
 ### Package Versions
 
-- vue v2.4.2
-- vue-router v2.7.0
-- vue-resource v1.3.4
-- vuex v2.3.0
+- vue v2.5.13
+- vue-router v3.0.1
+- vue-resource v1.3.5
+- vuex v3.0.1
+
+### Compatibility
+
+- vue-router v3.0.0 has breaking changes for TypeScript: https://github.com/vuejs/vue-router/releases/tag/v3.0.0
+- vuex v3.0.0 has breaking changes for TypeScript: https://github.com/vuejs/vuex/releases/tag/v3.0.0
 
 ### Setup
 
